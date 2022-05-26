@@ -14,6 +14,14 @@ To change filters to different property types - change defaults in the function 
 
 # To Scrape the Property Data
 
+Setup ChromeDriver:
+selenium.webdriver.Chrome():
+Rendering page using selenium.webdriver.Chrome()
+Get Chrome WebDriver here - https://sites.google.com/chromium.org/driver/ - According to the version of Chrome.
+Add path to the folder containing it to PATH System Enviromental Variables.
+Install: pip install selenium
+Put downloaded Chromedriver to seome folder, change path to this folder in chromedrive_path variable in sreality_scrape.py - render_page function
+
 Run sreality_main.py (from terminal - .\sreality_main.py)
 
 # Plotly for Different Data

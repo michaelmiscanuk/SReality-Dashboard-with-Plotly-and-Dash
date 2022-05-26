@@ -19,8 +19,7 @@ def render_page(url):
     '''
         selenium.webdriver.Chrome():
             Rendering page using selenium.webdriver.Chrome()
-            Get Chrome WebDriver here - https://chromedriver.storage.googleapis.com/index.html?path=2.32/
-            or https://sites.google.com/a/chromium.org/chromedriver/downloads
+            Get Chrome WebDriver here - https://sites.google.com/chromium.org/driver/
             Add path to the folder containing it to PATH System Enviromental Variables.
             Install: pip install selenium
     '''
@@ -94,8 +93,8 @@ def unique_values_df_to_excel(df, excel_name, transpose):
             df.apply(lambda x: [x.unique()]).to_excel(f"{excel_name}.xlsx")
 
 
-def get_property_links( page = 1, advertising_type = "for-sale", property_kind = "apartments", 
-                        district = "praha", property_type = "1+1", min_price = 0, max_price = 2800000): 
+def get_property_links( page = 1, advertising_type = "to-rent", property_kind = "apartments", 
+                        district = "praha", property_type = "4+kt,4+1", min_price = 0, max_price = 20000): 
     '''
         Returns all the Links to the Individual Properties from one filtered page, which contains up to 20 links to Individual Properies.
 
@@ -110,7 +109,7 @@ def get_property_links( page = 1, advertising_type = "for-sale", property_kind =
             district: e.g. "praha", "stredocesky-kraj" etc.
 
             property_type: Possible values are something like: 
-                "2+kt,2+1,3+kt,3+1,4+kt,4+1" #'1+1' # "2+kt,2+1" #"1+1,1+kt" # "2+kt,2+1,3+kt,3+1,4+kt,4+1".
+                "2+kt,2+1,3+kt,3+1,4+kt,4+1" #'1+1' # "2+kt,2+1" #"1+1,1+kt" # "2+kt,2+1,3+kt,3+1,4+kt,4+1"
                 "" for all types.
                 DONT USE SPACEs; input type of property in this format - "1+1,1+kt"; kt stands for kitchen
 
