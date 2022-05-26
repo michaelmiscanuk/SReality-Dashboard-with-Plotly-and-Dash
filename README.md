@@ -1,15 +1,19 @@
 # This project will let you examine and analyze SReality using Plotly / Dash Dashboard.
 
 # Setup
+
 Install all libraries from requirements.txt
 
 # RUN
-Running sreality_df_plotly_dash.py will start a server and open a browser window with the plotly dashboard.
+
+Running sreality_df_plotly_dash.py (from terminal - .\sreality_df_plotly_dash.py) will start a server and open a browser window with the plotly dashboard.
 
 # Filter Properties
+
 To change filters to different property types - change defaults in the function get_property_links in sreality_scrape.py file - according to the function description.
 
 # Plotly for Different Data
+
 Plotly Dashboard (sreality_df_plotly_dash.py) can be used to any other table data - with some minor changes in the code - where you need to list a names of columns from YOUR data.
 
 In the function clean_property_df() - columns variable - list all columns from your data that will be selected for analysis
