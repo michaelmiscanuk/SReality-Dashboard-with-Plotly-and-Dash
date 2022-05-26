@@ -341,7 +341,7 @@ def prepare_column_names_and_aggr_functions():
         "Annuity",
     ]
 
-    # Columns of the Numerical X Variable,s of the Distances from Property
+    # Columns of the Numerical X Variables of the Distances from Property
     table_columns = [
         "Price",
         "Property_Type",
