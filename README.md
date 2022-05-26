@@ -12,6 +12,10 @@ Running sreality_df_plotly_dash.py (from terminal - .\sreality_df_plotly_dash.py
 
 To change filters to different property types - change defaults in the function get_property_links in sreality_scrape.py file - according to the function description.
 
+# To Scrape the Property Data
+
+Run sreality_main.py (from terminal - .\sreality_main.py)
+
 # Plotly for Different Data
 
 Plotly Dashboard (sreality_df_plotly_dash.py) can be used to any other table data - with some minor changes in the code - where you need to list a names of columns from YOUR data.
